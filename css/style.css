@@ -30,6 +30,7 @@ html {
   --overskrift: 'avenir';
   --broedtekst: Helvetica, sans-serif;
   --jolly: 'scheme',sans-serif;
+  --headtypo:  hero-new, sans-serif;
   /* whitespace */
   --whitespace: 2rem;
 }
@@ -91,7 +92,9 @@ line-height: 1.7;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: var(--overskrift);
+  font-family: var(--headtypo);
+  font-weight: 100;
+font-style: normal;
   margin: 0;
   height: 100%;
 }
@@ -129,7 +132,9 @@ line-height: 1.7;
 }
 
 #headerlogo {
-  width: 8%;
+  width: 20%;
+  padding: 14px 16px;
+
 }
 
 
