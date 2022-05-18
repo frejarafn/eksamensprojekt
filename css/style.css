@@ -1,3 +1,5 @@
+/* class er ., id er # */
+
 /* fjerner default browser styles */
 @import 'reset.css';
 
@@ -46,7 +48,7 @@ p {
   font-family: var(--overskrift);
   margin: var(--whitespace) var(--whitespace);
   padding-bottom: var(--whitespace);
-  font-size: 2em;
+  font-size: 1.5em;
   /* max-width: 35ch;  */
   color: black;
   max-width: 90%;
@@ -54,6 +56,13 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 line-height: 1.7;
+}
+
+h1 {
+  font-family: var(--overskrift);
+  text-align: center;
+  font-size: 2.5em;
+  color: black;
 }
 
 
@@ -146,6 +155,16 @@ font-style: normal;
 img {
   width: 100%;
 }
+
+
+.menuprodukt {
+  display: flex;
+  gap: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
 
 /* Footer */
 
