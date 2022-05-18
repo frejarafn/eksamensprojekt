@@ -64,6 +64,12 @@ h1 {
   font-size: 2.5em;
   color: black;
 }
+h2 {
+  font-family: var(--overskrift);
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
 
 h3 {
   font-family: var(--overskrift);
@@ -226,6 +232,52 @@ img {
   line-height: 75px;
   font-size: 15px;
 }
+
+
+
+/* FAQ */
+.accordion {
+  background-color: rgb(232, 235, 235);
+  color: rgb(130, 192, 195);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+  font-family: var(--overskrift);
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
 
 
 /* Responsivt */
