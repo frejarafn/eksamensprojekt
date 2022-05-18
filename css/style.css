@@ -65,6 +65,13 @@ h1 {
   color: black;
 }
 
+h3 {
+  font-family: var(--overskrift);
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+}
+
 
 /* Header */
 
@@ -162,9 +169,12 @@ img {
   gap: 75px;
   padding-left: 25px;
   padding-right: 25px;
-
 }
 
+#forsker {
+  width: 50%;
+  padding: 40px;
+}
 
 /* Footer */
 
@@ -202,8 +212,10 @@ img {
   opacity: 0.7;
 }
 
-
-
+/* Om-side opsætning*/
+.historie {
+  d
+}
 
 
 
