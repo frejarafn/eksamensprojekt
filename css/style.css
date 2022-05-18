@@ -214,9 +214,18 @@ img {
 
 /* Om-side opsætning*/
 .historie {
-  d
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(155, 190, 226);
 }
-
+.historie > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
 
 
 /* Responsivt */
