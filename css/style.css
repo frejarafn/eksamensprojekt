@@ -178,7 +178,19 @@ img {
 }
 
 #forsker {
-  width: 50%;
+  width: 70%;
+  padding: 40px;
+}
+#mve {
+  width: 60%;
+  padding: 40px;
+}
+#olddesign {
+  width: 60%;
+  padding: 40px;
+}
+#cvidag {
+  width: 90%;
   padding: 40px;
 }
 
@@ -222,10 +234,10 @@ img {
 .historie {
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgb(155, 190, 226);
+  background-color: rgb(255, 255, 255);
 }
 .historie > div {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   width: 100%;
   margin: 10px;
   text-align: center;
