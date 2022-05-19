@@ -352,10 +352,23 @@ input[type=submit]:hover {
 }
 
 
-
-
-
-
+/* Ingrediens side opsætning */
+.ingredienser {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(255, 255, 255);
+}
+.ingredienser > div {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+.ingrediens {
+  width: 80%;
+}
 
 
 
