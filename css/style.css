@@ -25,6 +25,7 @@ html {
  
 
   --header: RGB(209, 23, 47);
+  --footer: #7cd1e4;
   --navbar: #ffffff;
   --navhover: #b8dee7;
 
@@ -213,7 +214,24 @@ width: 60%;
 
 
 /* Footer */
+footer {
+  background-color: var(--footer);
+  padding: 35px 0;
+  text-align: center;
+  font-family: var(--jolly);
+  width: 100%;
+margin: 0;
+}
 
+.footerlogo {
+  width: 20%;
+}
+
+.footerp {
+  color: #ffffff;
+  font-size: 1em;
+margin: 0%;
+}
 
 
 /* Andet indhold */
