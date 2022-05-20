@@ -248,7 +248,7 @@ background-color: var(--footer);
 }
 
 .footersome {
-  width: 40%;
+  width: 20%;
 }
 
 footer a {
@@ -462,6 +462,105 @@ input[type=submit]:hover {
   line-height: 75px;
   font-size: 15px;
 }
+
+/* Login Til Supportsite */
+#lukmigind{
+  background-color: rgb(128, 204, 219);
+}
+
+#loginlogo{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+  
+
+
+#loginbutton{
+  background-color: RGB(133, 180, 190);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: var(--broedtekst);
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+
+}
+#logoututton{
+  background-color: RGB(133, 180, 190);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: var(--broedtekst);
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+
+}
+  
+
+.cat{
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+ 
+}
+
+.animer {
+  animation: bounceIn 3s ease-in-out;
+  font-size: 80px;
+  text-align: center;
+  font-family: var(--overskrift);
+  color: white;
+ 
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+#password {
+    text-align: center;
+}
+
+#logsec{
+    padding-left: 630px;
+    
+}
+
+
+
+
 
 
 
