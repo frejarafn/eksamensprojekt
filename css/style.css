@@ -222,7 +222,7 @@ width: 60%;
 .produktkort {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  font-size: 1em;
+  /* font-size: 1em; */
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -230,7 +230,7 @@ width: 60%;
 
 .pris {
   color: grey;
-  font-size: 22px;
+  font-size: 1em;
 }
 
 .produktkort button {
@@ -242,16 +242,27 @@ width: 60%;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .card button:hover {
   opacity: 0.7;
 }
 
-.pkfont {
-  font-size: 1em;
+.pkh1 {
+  font-size: 2em;
+  font-family: var(--headtypo);
 }
+.pkp {
+  font-size: 2em;
+  font-family: var(--overskrift);
+
+}
+.pkimg {
+  width: 10em;
+}
+
+
 
 /* Om-side opsætning*/
 .historie {
@@ -402,7 +413,7 @@ input[type=submit]:hover {
   /* /* gap: 100px; */
   padding-left: 50px;
   padding-right: 50px;
-  background-color: rgb(207, 145, 145);
+  /* background-color: rgb(207, 145, 145); */
 }
 .products > div {
   background-color: #ffffff;
