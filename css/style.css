@@ -216,7 +216,7 @@ width: 60%;
 /* Footer */
 footer {
   background-color: var(--footer);
-  padding: 35px 0;
+  padding-bottom:  0%;
   text-align: center;
   font-family: var(--jolly);
   width: 100%;
@@ -229,10 +229,31 @@ margin: 0;
 
 .footerp {
   color: #ffffff;
-  font-size: 1em;
+  font-size: 0.7em;
 margin: 0%;
 }
 
+.footernav {overflow: hidden;
+background-color: var(--navbar);
+display: flex;
+justify-content: space-between;
+background-color: var(--footer);
+}
+.footermenu {
+  color: white;
+  padding-bottom: 0ch;
+}
+.footerline {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.footersome {
+  width: 40%;
+}
+
+footer a {
+  text-decoration: none;
+}
 
 /* Andet indhold */
 
