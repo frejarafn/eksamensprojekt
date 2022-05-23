@@ -25,7 +25,7 @@ html {
  
 
   --header: RGB(209, 23, 47);
-  --footer: #7cd1e4;
+  --footer: #B1C5D5;
   --navbar: #ffffff;
   --navhover: #b8dee7;
 
@@ -91,8 +91,8 @@ h3 {
   background-color: var(--navbar);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 .navbar a {
   float: left;
   /* font-size: 16px; */
@@ -102,7 +102,6 @@ h3 {
 }
 
 .subnav {
-  float: left;
   overflow: hidden;
   justify-content: space-between;
 
@@ -113,7 +112,7 @@ h3 {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   background-color: inherit;
   font-family: var(--headtypo);
   font-weight: 100;
@@ -122,18 +121,27 @@ font-style: normal;
   height: 100%;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
+.subnav:hover .subnavbtn {
   background-color: var(--navhover);
 }
 
 .subnav-content {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  left: 0;
+  margin-top: 30px;
+  /* bottom: 10px;  */
+  /* left: 0; */
   background-color: var(--navhover);
-  width: 100%;
+  transition: height .5s;
+  /* width: 100%; */
   z-index: 1;
+  height: 0;
+  overflow: hidden;
+}
 
+.subnav-content-last {
+  right: 0;
 }
 
 .subnav-content a {
@@ -142,7 +150,6 @@ font-style: normal;
   text-decoration: none;
   font-size: 18px;
   padding: 14px 16px;
-
 }
 
 .subnav-content a:hover {
@@ -151,12 +158,19 @@ font-style: normal;
 }
 
 .subnav:hover .subnav-content {
-  display: block;
+  /* display: flex;
+  flex-direction: column; */
+  height: 250px
+}
+
+.subnav:nth-child(2):hover .subnav-content {
+  
+  height: 50px
 }
 
 #headerlogo {
-  width: 30%;
-  padding: 14px 16px;
+  width: 300px;
+  /* padding: 14px 16px; */
 
 }
 
@@ -208,6 +222,42 @@ width: 80%;
   margin-right: auto;
 width: 60%;
 }
+
+.supportmenu {
+  display: flex;
+  gap: 75px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#supportlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/parallax.png");
+  min-height: 600px;
+  width: 100%;
+
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+
+
 
 
 
@@ -318,6 +368,24 @@ footer a {
   font-size: 15px;
 }
 
+/* Review på forside */
+.reviewflex {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(255, 255, 255);
+}
+.reviewflex > div {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+#reviewimg {
+  width: 30%;
+}
 
 
 /* FAQ */
@@ -556,6 +624,13 @@ input[type=submit]:hover {
 #logsec{
     padding-left: 630px;
     
+}
+
+/* slideshow lavet ved hjælp af https://www.w3schools.com/w3css/w3css_slideshow.asp  */
+.mySlides {
+  max-width: 100%;
+  height: auto;
+  display:none;
 }
 
 
