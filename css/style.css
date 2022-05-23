@@ -161,10 +161,13 @@ font-style: normal;
   flex-direction: column; */
   height: 250px
 }
-
+.subnav:nth-child(1):hover .subnav-content {
+  
+  height: 350px
+}
 .subnav:nth-child(2):hover .subnav-content {
   
-  height: 50px
+  height: 100px
 }
 
 #headerlogo {
@@ -189,6 +192,8 @@ label .menu {
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
   cursor: pointer;
+  overflow: hidden;
+
   
 }
 
@@ -261,6 +266,11 @@ label ul {
   opacity: 0;
   -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
+  font-family: var(--headtypo);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0px;
 }
 
 label a {
@@ -382,6 +392,10 @@ width: 60%;
   width: 100%;
 }
 
+.forsidebannermobil {
+  width: 100%;
+
+}
 
 
 
