@@ -40,7 +40,6 @@ html {
 
 body {
   font-family: var(--broedtekst);
-  color: var(--navbar);
   margin: 0;
 }
 
@@ -199,7 +198,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #69D2e7;
+  background: #ddd;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -215,7 +214,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #69d2e7;
+  background: #ddd;
 }
 
 label .hamburger:before { top: -10px; }
@@ -272,18 +271,18 @@ label a {
   
 }
 
-h1 {
+/* h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 80%;
-  text-align: center;
-}
+  text-align: center; */
+/* } */
 
 .mobillogo { 
-  max-width: 50%;
+  max-width: 55%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -295,16 +294,20 @@ h1 {
 
 
 /* Billeder */
-img {
+
+.forsidebanner {
   width: 100%;
 }
-
 
 .menuprodukt {
   display: flex;
   gap: 75px;
   padding-left: 25px;
   padding-right: 25px;
+  
+}
+.menuproduktimg {
+  width: 100%;
 }
 
 #forsker {
@@ -372,8 +375,12 @@ width: 60%;
 }
 
 
-
-
+.influencer {
+  width: 100%;
+}
+.ekspert {
+  width: 100%;
+}
 
 
 
@@ -629,7 +636,60 @@ input[type=submit]:hover {
   width: 80%;
 }
 
+/* Produktside opsætning */
+.prods {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* /* gap: 100px; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.prods > .product-card {
+  height: 300px;
+  width: 300px;
+  border: black 1px solid;
+}
+
+.product-card .product {
+  height: 200px;
+  text-align: center;
+}
+
+.product-card .product > img {
+  height: 100%;
+}
+
+.product-card .product-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card > .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background:green;
+}
+
+.product-card > .back {
+  display: none;
+  height: 100%;
+  background:orange;
+}
+
+.product-card:hover > .front {
+  display: none;
+}
+
+.product-card:hover > .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
 /* Produktside opsætning */
 .products {
   display: flex;
@@ -757,16 +817,15 @@ input[type=submit]:hover {
 
 
 
-
-
-
 /* Responsivt */
 /* 1. Mobile enheder (begynd her) */
 @media only screen and (max-width: 600px) {
 .navbar {
   display: none;
 }
-.slideshow {
+
+
+.compforside {
   display: none;
 }
 
@@ -775,15 +834,26 @@ input[type=submit]:hover {
 /* 2. Tablets mv. (fortsæt her) */
 
 @media only screen and (min-width: 600px) {
-
+  .mobilforside {
+    display: none;
+  }
 
 }
 
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 768px) {
 
-
-
+  .mobilforside {
+    display: none;
+  }
+  .mobillogo {
+    display: none;
+  }
+  .mobilburger {
+    display: none;
+  }
 }
+
+
 
 
