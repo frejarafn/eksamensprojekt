@@ -650,7 +650,16 @@ input[type=submit]:hover {
   width: 80%;
 }
 
-/* Produktside opsætning */
+/* Produktkort */
+.prodflex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* /* gap: 100px; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .prods {
   display: flex;
   flex-wrap: nowrap;
@@ -685,13 +694,13 @@ input[type=submit]:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background:green;
+  background:rgb(244, 244, 244);
 }
 
 .product-card > .back {
   display: none;
   height: 100%;
-  background:orange;
+  background: #ddd;
 }
 
 .product-card:hover > .front {
@@ -703,6 +712,36 @@ input[type=submit]:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+.product-header {
+  font-family: var(--headtypo);
+  font-weight:500;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.product-info {
+  font-family: var(--headtypo);
+  font-weight:500;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  padding-top:60px;
+  text-align: center;
+}
+.product-footer > button{
+  background-color: var(--footer);
+  font-family: var(--headtypo);
+  transition-duration: 0.4s;
+  border: 1px solid grey;
+}
+.product-footer > button:hover{
+  background-color: var(--footer);
+  color: white;
+}
+
+
+
   
 /* Produktside opsætning */
 .products {
@@ -722,6 +761,7 @@ input[type=submit]:hover {
   line-height: 75px;
   font-size: 15px;
 }
+
 
 /* Login Til Supportsite */
 #lukmigind{
