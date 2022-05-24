@@ -51,7 +51,7 @@ p {
   font-size: 1.5em;
   /* max-width: 35ch;  */
   color: black;
-  max-width: 90%;
+  max-width: 70%;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -91,6 +91,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
 }
 .navbar a {
   float: left;
@@ -342,6 +345,13 @@ label a {
   margin-left: auto;
   margin-right: auto;
 width: 80%;
+}
+
+.backtotop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 10%;
 }
 
 .type {
@@ -733,7 +743,7 @@ input[type=submit]:hover {
   background-color: var(--footer);
   font-family: var(--headtypo);
   transition-duration: 0.4s;
-  border: 1px solid grey;
+  border: 1px solid #808080;
 }
 .product-footer > button:hover{
   background-color: var(--footer);
