@@ -321,6 +321,16 @@ label a {
 }
 .menuproduktimg {
   width: 100%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+ .menuproduktimg:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.supportmenu {
+  width: 100%;
 }
 
 #forsker {
@@ -480,12 +490,15 @@ footer a {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 1em;
+  font-size: 4em;
 }
+
+
 
 .card button:hover {
   opacity: 0.7;
 }
+
 
 .pkh1 {
   font-size: 2em;
@@ -682,8 +695,15 @@ input[type=submit]:hover {
 .prods > .product-card {
   height: 300px;
   width: 300px;
-  border: black 1px solid;
+  /* border: black 1px solid; */
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
+.prods > .product-card:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 
 .product-card .product {
   height: 200px;
@@ -704,13 +724,13 @@ input[type=submit]:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background:rgb(244, 244, 244);
+  background:rgb(255, 255, 255);
 }
 
 .product-card > .back {
   display: none;
   height: 100%;
-  background: #ddd;
+  background: rgb(241, 241, 241);
 }
 
 .product-card:hover > .front {
@@ -744,12 +764,18 @@ input[type=submit]:hover {
   font-family: var(--headtypo);
   transition-duration: 0.4s;
   border: 1px solid #808080;
+  font-size: 1.2em;
+
 }
 .product-footer > button:hover{
   background-color: var(--footer);
   color: white;
 }
-
+.product-footer >button:active {
+  background-color: #6993db;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 
   
