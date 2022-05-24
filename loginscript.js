@@ -1,22 +1,3 @@
-// slideshow
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-
-
-
-
 
 const loginKey = 'key'
 const loginPassword = '1234'
@@ -42,7 +23,7 @@ if (loginDiv) {
 if (loginButton) {
     const password = document.getElementById('password')
     loginButton.addEventListener("click", () => {
-        if (logIn(password.value)) document.location.replace('index.html')
+        if (logIn(password.value)) document.location.replace('supportsite.html')
     })
 }
 
@@ -70,24 +51,5 @@ function logOut () {
 
 
 
-
-
-
-// FAQ accordion
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
 
 

@@ -40,7 +40,6 @@ html {
 
 body {
   font-family: var(--broedtekst);
-  color: var(--navbar);
   margin: 0;
 }
 
@@ -162,10 +161,13 @@ font-style: normal;
   flex-direction: column; */
   height: 250px
 }
-
+.subnav:nth-child(1):hover .subnav-content {
+  
+  height: 350px
+}
 .subnav:nth-child(2):hover .subnav-content {
   
-  height: 50px
+  height: 100px
 }
 
 #headerlogo {
@@ -190,6 +192,8 @@ label .menu {
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
   cursor: pointer;
+  overflow: hidden;
+
   
 }
 
@@ -199,7 +203,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #69D2e7;
+  background: #ddd;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -215,7 +219,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #69d2e7;
+  background: #ddd;
 }
 
 label .hamburger:before { top: -10px; }
@@ -262,6 +266,11 @@ label ul {
   opacity: 0;
   -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
+  font-family: var(--headtypo);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0px;
 }
 
 label a {
@@ -272,18 +281,18 @@ label a {
   
 }
 
-h1 {
+/* h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 80%;
-  text-align: center;
-}
+  text-align: center; */
+/* } */
 
 .mobillogo { 
-  max-width: 50%;
+  max-width: 55%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -295,16 +304,20 @@ h1 {
 
 
 /* Billeder */
-img {
+
+.forsidebanner {
   width: 100%;
 }
-
 
 .menuprodukt {
   display: flex;
   gap: 75px;
   padding-left: 25px;
   padding-right: 25px;
+  
+}
+.menuproduktimg {
+  width: 100%;
 }
 
 #forsker {
@@ -372,9 +385,17 @@ width: 60%;
 }
 
 
+.influencer {
+  width: 100%;
+}
+.ekspert {
+  width: 100%;
+}
 
+.forsidebannermobil {
+  width: 100%;
 
-
+}
 
 
 
@@ -629,7 +650,99 @@ input[type=submit]:hover {
   width: 80%;
 }
 
+/* Produktkort */
+.prodflex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* /* gap: 100px; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.prods {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* /* gap: 100px; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.prods > .product-card {
+  height: 300px;
+  width: 300px;
+  border: black 1px solid;
+}
+
+.product-card .product {
+  height: 200px;
+  text-align: center;
+}
+
+.product-card .product > img {
+  height: 100%;
+}
+
+.product-card .product-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card > .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background:rgb(244, 244, 244);
+}
+
+.product-card > .back {
+  display: none;
+  height: 100%;
+  background: #ddd;
+}
+
+.product-card:hover > .front {
+  display: none;
+}
+
+.product-card:hover > .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.product-header {
+  font-family: var(--headtypo);
+  font-weight:500;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.product-info {
+  font-family: var(--headtypo);
+  font-weight:500;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  padding-top:60px;
+  text-align: center;
+}
+.product-footer > button{
+  background-color: var(--footer);
+  font-family: var(--headtypo);
+  transition-duration: 0.4s;
+  border: 1px solid grey;
+}
+.product-footer > button:hover{
+  background-color: var(--footer);
+  color: white;
+}
+
+
+
+  
 /* Produktside opsætning */
 .products {
   display: flex;
@@ -648,6 +761,7 @@ input[type=submit]:hover {
   line-height: 75px;
   font-size: 15px;
 }
+
 
 /* Login Til Supportsite */
 #lukmigind{
@@ -757,16 +871,15 @@ input[type=submit]:hover {
 
 
 
-
-
-
 /* Responsivt */
 /* 1. Mobile enheder (begynd her) */
 @media only screen and (max-width: 600px) {
 .navbar {
   display: none;
 }
-.slideshow {
+
+
+.compforside {
   display: none;
 }
 
@@ -775,15 +888,26 @@ input[type=submit]:hover {
 /* 2. Tablets mv. (fortsæt her) */
 
 @media only screen and (min-width: 600px) {
-
+  .mobilforside {
+    display: none;
+  }
 
 }
 
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 768px) {
 
-
-
+  .mobilforside {
+    display: none;
+  }
+  .mobillogo {
+    display: none;
+  }
+  .mobilburger {
+    display: none;
+  }
 }
+
+
 
 
