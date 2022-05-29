@@ -1,4 +1,4 @@
-
+// Passworf login til loginsiden
 const loginKey = 'key'
 const loginPassword = '1234'
 
@@ -9,7 +9,7 @@ const loginDiv = document.getElementById('loginDiv')
 const logoutDiv = document.getElementById('logoutDiv')
 const loginChecker = document.getElementById('loginChecker')
 
-// Hvis siden har en loginchecker id så bliver der checket om man er logget på eller ej, og ellers bliver man viderestillet til loginsiden 
+// Siden har fået en loginchecker id så der bliver checket om man er logget på eller ej, og ellers bliver man viderestillet til loginsiden 
 if (loginChecker) {
     if (!isLoggedIn()) document.location.replace('login.html')
 }
@@ -39,7 +39,7 @@ function isLoggedIn () {
     return localStorage.getItem(loginKey) === loginPassword
 }
 
-/** Login gemmer password i browserens local storage */ 
+/** Login gemmer password i browserens local storage, så der huskes at man er logget på */ 
 function logIn (password) {
     localStorage.setItem(loginKey, password)
     return isLoggedIn()

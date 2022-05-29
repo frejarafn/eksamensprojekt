@@ -2,60 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>CeraVe</title>
+  <title>CeraVe - Login supportsite</title>
 
-    <!-- SEO -->
-    <meta name="author" content="Majbrit Oehlenschläger Jeppesen & Freja van Gilst">
-	<meta name="description" content="Jolly Colas officielle side med produktinformation og konkurrencer ">
-	<meta name="keywords" content="Jolly, Cola, konkurrence, dansk, original, produkter, forside, danmark, sodavand ">
+  <!-- SEO -->
+  <meta name="author" content="Majbrit Oehlenschläger Jeppesen & Freja van Gilst">
+  <meta name="description" content="CeraVes login side til supportsite ">
+  <meta name="keywords"
+    content="CeraVe, hudpleje, produktinformation, ceramider, hudpleje til mænd, produkter, hudpleje mænd, hudpleje til kvinder, dermatolog, login, supportsite">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Viewport skaleres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Viewport skaleres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link til CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- favicon = ikon i faneblad / browser -->
-	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Link til CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Links til fonte -->
-    <link rel="stylesheet" href="https://use.typekit.net/hgh6gvp.css">
+  <!-- favicon = ikon i faneblad / browser -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
 
+  <!-- Links til fonte -->
+  <link rel="stylesheet" href="https://use.typekit.net/hgh6gvp.css">
+
+  <!-- robots.txt -->
+	<meta name="robots" content="noindex">
 </head>
 
-<body id="lukmigind">
-    <div class="cat">
-   <img id="loginlogo" src="images/footerlogo.png" alt="CeraVe logo">
-   </div>
-   
-   
+<!-- Logind checker for at se om bruger allerede er logget in -->
 
-<div> <h1 class="animer">CeraVes Supportsite</h1></div>
-<section id="logsec">
+<body id="lukmigind">
+  <div class="cat">
+    <img id="loginlogo" src="images/footerlogo.png" alt="CeraVe logo">
+  </div>
+
+
+
+  <div>
+    <h1 class="animer">CeraVes Supportsite</h1>
+  </div>
+
+  <!-- Loginsektion, hvor password indtastes så brugeren får adgang til supportsitet -->
+  <section id="logsec">
     <div id="loginDiv">
-        <input type="password" id="password" /> <button id="loginbutton">Login</button>
+      <input type="password" id="password" /> <button id="loginbutton">Login</button>
     </div>
     <div id="logoutDiv">
-        <button id="logoutButton">Log ud</button>
+      <button id="logoutButton">Log ud</button>
     </div>
-</section>
-<br>
-<br>
-<br>
-<br>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<a class="forsideknaplink" href="index.html">
-  <button class="forsideknap">Tilbage til forsiden</button>
+  <a class="forsideknaplink" href="index.html">
+    <button class="forsideknap">Tilbage til forsiden</button>
   </a>
   <br>
-<br>
-<br>
-<br>
-<div id="passwordhelp">
+  <br>
+  <br>
+  <br>
+
+  <!-- Her er et produktkort benyttet for at simpelt at hjælpe med brugeren. Det vi har gjort ville jo aldrig blive brugt i virkeligheden, men vi har gjort det for at gøre det nemmere for lærere og censore -->
+  <div id="passwordhelp">
 
     <div class="prods">
       <div class="product-card">
@@ -71,9 +82,9 @@
       </div>
     </div>
 
-</div>
+  </div>
 
-<script src="loginscript.js"></script>
+  <script src="loginscript.js"></script>
 
 </body>
 

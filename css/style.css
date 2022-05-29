@@ -228,6 +228,13 @@ font-style: normal;
   margin-right: auto;
 }
 
+#seoimg {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .some {
   width: 40%;
   display: block;
