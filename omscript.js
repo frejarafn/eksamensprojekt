@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // FAQ accordion
 
 var acc = document.getElementsByClassName("accordion");

@@ -79,6 +79,7 @@ h3 {
 }
 
 
+
 /* Header */
 
 
@@ -101,6 +102,10 @@ h3 {
   color: black;
   text-align: center;
   text-decoration: none;
+}
+#tidlkamp {
+  text-decoration: none;
+
 }
 
 .subnav {
@@ -164,11 +169,11 @@ font-style: normal;
   flex-direction: column; */
   height: 250px
 }
-.subnav:nth-child(1):hover .subnav-content {
+.subnav:nth-child(2):hover .subnav-content {
   
   height: 350px
 }
-.subnav:nth-child(2):hover .subnav-content {
+.subnav:nth-child(3):hover .subnav-content {
   
   height: 100px
 }
@@ -180,119 +185,17 @@ font-style: normal;
 }
 
 
+.burger {
+  display: none
+}
+
+
 
 /* burgermenunavigation på mobil */
-label .menu {
-  position: absolute;
-  right: -100px;
-  top: -100px;
-  z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: #FFF;
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-  cursor: pointer;
-  overflow: hidden;
 
-  
-}
 
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
-  height: 2px;
-  background: #ddd;
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
 
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #ddd;
-}
 
-label .hamburger:before { top: -10px; }
-
-label .hamburger:after { bottom: -10px; }
-
-label input { display: none; }
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  border-radius: 0;
-  
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-  
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-  
-}
-
-label input:checked + .menu + ul { opacity: 1; }
-
-label ul {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
-  font-family: var(--headtypo);
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  padding-inline-start: 0px;
-}
-
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #f38630;
-  text-decoration: none;
-  
-}
-
-/* h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center; */
-/* } */
 
 .mobillogo { 
   max-width: 55%;
@@ -312,6 +215,37 @@ label a {
   width: 100%;
 }
 
+.mobilom {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tone{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.some {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.somemobil {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingrediensmob {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .menuprodukt {
   display: flex;
   gap: 75px;
@@ -321,6 +255,12 @@ label a {
 }
 .menuproduktimg {
   width: 100%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.menuproduktimgmob {
+  width: 110%;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -442,6 +382,15 @@ margin: 0;
 margin: 0%;
 
 }
+.footerpmob {
+  color: #ffffff;
+  font-size: 0.7em;
+margin: 0%;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 .footernav {overflow: hidden;
 background-color: var(--navbar);
@@ -461,6 +410,9 @@ background-color: var(--footer);
 
 .footersome {
   width: 20%;
+}
+.footersomemob {
+  width: 40%;
 }
 
 footer a {
@@ -550,6 +502,12 @@ footer a {
 
 #reviewimg {
   width: 30%;
+}
+#reviewimgmob {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -648,7 +606,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #275e6d;
 }
 
 .container {
@@ -804,12 +762,13 @@ input[type=submit]:hover {
 
 /* Login Til Supportsite */
 #lukmigind{
-  background-color: rgb(128, 204, 219);
+  background-color: var(--footer);
 }
 
 #loginlogo{
   max-width: 100%;
   max-height: 100%;
+  text-align: center;
 
 }
   
@@ -847,7 +806,6 @@ input[type=submit]:hover {
 
 .cat{
   width: 500px;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
@@ -857,10 +815,13 @@ input[type=submit]:hover {
 .animer {
   animation: bounceIn 3s ease-in-out;
   font-size: 80px;
-  text-align: center;
+
   font-family: var(--overskrift);
   color: white;
- 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
   
 }
 
@@ -893,8 +854,39 @@ input[type=submit]:hover {
 }
 
 #logsec{
-    padding-left: 630px;
-    
+    text-align: center;
+}
+
+#passwordhelp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.supportknap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--overskrift);
+  font-size: 2em;
+  background-color: var(--footer);
+  text-decoration: none;
+}
+.supportknaplink {
+
+  text-decoration: none;
+}
+.forsideknap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--overskrift);
+  font-size: 3em;
+  background-color: white;
+  text-decoration: none;
+}
+.forsideknaplink  {
+  text-decoration: none;
 }
 
 /* slideshow lavet ved hjælp af https://www.w3schools.com/w3css/w3css_slideshow.asp  */
@@ -914,14 +906,101 @@ input[type=submit]:hover {
 /* 1. Mobile enheder (begynd her) */
 @media only screen and (max-width: 600px) {
 .navbar {
-  display: none;
+  flex-direction: column;
 }
 
+.navbar > .burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+.bmenu {
+  transition: .5s;
+}
+
+.navbar > .subnav {
+  display: none
+}
+
+.navbar:hover > .subnav {
+  display: inherit
+}
+
+.navbar:hover > .burger > .bmenu {
+  transform: rotate(90deg);
+}
+
+.subnav-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 30px;
+  /* bottom: 10px;  */
+  /* left: 0; */
+  background-color: var(--navhover);
+  transition: height .5s;
+  /* width: 100%; */
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+}
+
+#headerlogomobil {
+  display: block;
+  width: 100px;
+}
+
+#headerlogo {
+  display: none
+}
+
+p {
+  font-size: 1em;
+}
+h2 {
+  font-size: 1.5em;
+}
 
 .compforside {
   display: none;
 }
+.desktop{
+  display: none;
+}
 
+.accordion {
+  font-size: 1em;
+}
+
+.some {
+  display: none;
+}
+.forsidebanner {
+  display: none;
+}
+
+.ingredienser {
+  display: none;
+}
+.menuproduktimg {
+  display: none;
+}
+.produktdesktop {
+  display: none;
+}
+#reviewimg {
+  display: none;
+}
+#reviewp {
+  display: none;
+}
+.footerdesktop {
+  display: none;
+}
 }
 
 /* 2. Tablets mv. (fortsæt her) */
@@ -945,6 +1024,36 @@ input[type=submit]:hover {
   .mobilburger {
     display: none;
   }
+
+  .mobil {
+    display: none;
+  }
+  .somemobil {
+    display: none;
+  }
+  .forsidebannermobil {
+    display: none;
+  }
+
+  .ingrediensmobil {
+    display: none;
+  }
+  .menuproduktimgmob {
+    display: none;
+  }
+  .produktmobil {
+    display: none;
+  }
+  #reviewimgmob {
+    display: none;
+  }
+  #reviewpmob {
+    display: none;
+  }
+  .footermob {
+    display: none;
+  }
+
 }
 
 

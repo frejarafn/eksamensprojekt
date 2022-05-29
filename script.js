@@ -4,14 +4,21 @@ carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  var element = document.getElementsByClassName("mySlides");
+  for (i = 0; i < element.length; i++) {
+    element[i].style.display = "none";  
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 2 seconds
+  if (myIndex > element.length) {myIndex = 1}
+  element[myIndex-1].style.display = "block";  
+  if (getComputedStyle(element[myIndex-1].parentElement.parentElement.parentElement).display === 'none') {
+    // hvis display er none på "parentElementet" bliver den ikke vist,
+    // kører carousel med det samme igen for at skippe til næste billedet
+    carousel()
+  } else {
+    setTimeout(carousel, 3000); // Skift billede hver 3 sekund
+  
+  }
 }
 
 
